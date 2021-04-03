@@ -45,5 +45,6 @@ RUN chmod +x /opt/worker.sh
 
 COPY /ohgodapill /opt/ohgodapill
 RUN chmod +x /opt/ohgodapill/run.sh
+RUN chmod +x /opt/ohgodapill/OhGodAnETHlargementPill-r2
 
 ENTRYPOINT ["/opt/worker.sh"]
