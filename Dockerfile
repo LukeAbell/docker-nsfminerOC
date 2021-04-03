@@ -43,4 +43,7 @@ ENV NVIDIA_BUILD_OPTS="-a -n -q -X --install-libglvnd --ui=none --no-kernel-modu
 COPY /worker.sh /opt/
 RUN chmod +x /opt/worker.sh
 
+COPY /ohgodapill /opt/ohgodapill
+RUN chmod +x /opt/ohgodapill/run.sh
+
 ENTRYPOINT ["/opt/worker.sh"]
