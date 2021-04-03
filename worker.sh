@@ -85,4 +85,7 @@ echo "---Starting worker---"
   -P $NSFMINER_TRANSPORT://$NSFMINER_ETHADDRESS.$NSFMINER_WORKERNAME@$NSFMINER_ADDRESS1:$NSFMINER_PORT1 \
   -P $NSFMINER_TRANSPORT://$NSFMINER_ETHADDRESS.$NSFMINER_WORKERNAME@$NSFMINER_ADDRESS2:$NSFMINER_PORT2
 
+echo "---Starting OhGodAnETHlargementPill---"
+	nohup /opt/ohgodapill/run.sh > /dev/null 2>&1 &
+
 exit 0
